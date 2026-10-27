@@ -17,7 +17,7 @@ COPY --from=alpine /usr/lib/libapk.so* /usr/lib/
 
 USER root
 RUN apk update \
- && apk add --no-cache ca-certificates tshark \
+ && apk add --no-cache ca-certificates tshark curl \
  && update-ca-certificates \
  && rm -rf /var/cache/apk/*
 USER node
