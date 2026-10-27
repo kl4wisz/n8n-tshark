@@ -1,5 +1,5 @@
 FROM alpine:latest AS alpine
-FROM docker.n8n.io/n8nio/n8n:2.44.7
+FROM n8nio/n8n:2.44.7
 
 ARG HTTP_PROXY
 ARG HTTPS_PROXY
